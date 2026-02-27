@@ -11,7 +11,7 @@ export const DATA = {
     "Backend-leaning full-stack developer focused on building reliable, scalable web systems.",
   summary:
     "Backend-leaning full-stack developer focused on building reliable, scalable web systems. Strong in secure API design, async workflows, data consistency, and backend architecture, with the ability to ship clean, production-ready frontends when required.",
-  avatarUrl: "/Me.png.jpeg",
+  avatarUrl: "https://plus.unsplash.com/premium_photo-1726079246917-46f2b37f7e9e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE2fHx8ZW58MHx8fHx8",
   skills: [
     "TypeScript",
     "JavaScript",
@@ -120,12 +120,12 @@ export const DATA = {
       links: [
         {
           type: "GitHub",
-          href: "#",
+          href: "https://github.com/Shivakushwah143/Craveo-formerly-Zomato-Lite-",
           icon: <Icons.github className="size-3" />,
         },
         {
           type: "Live",
-          href: "#",
+          href: "https://craveolite.vercel.app/",
           icon: <Icons.globe className="size-3" />,
         },
         {
@@ -156,12 +156,12 @@ export const DATA = {
       links: [
         {
           type: "GitHub",
-          href: "#",
+          href: "https://github.com/Shivakushwah143/ContentGeneration",
           icon: <Icons.github className="size-3" />,
         },
         {
           type: "Live",
-          href: "#",
+          href: "https://www.onewish.fun/",
           icon: <Icons.globe className="size-3" />,
         },
         {
@@ -224,7 +224,7 @@ export const DATA = {
         },
         {
           type: "Live",
-          href: "#",
+          href: "https://quickwish-gifts.vercel.app/",
           icon: <Icons.globe className="size-3" />,
         }
       ],
@@ -247,12 +247,12 @@ export const DATA = {
       links: [
         {
           type: "GitHub",
-          href: "#",
+          href: "https://github.com/Shivakushwah143/DevForces---Coding-Contest-Platform",
           icon: <Icons.github className="size-3" />,
         },
         {
           type: "Live",
-          href: "#",
+          href: "https://dev-forces-coding-contest-platform.vercel.app/",
           icon: <Icons.globe className="size-3" />,
         },
       ],
@@ -285,7 +285,7 @@ export const DATA = {
         },
         {
           type: "Live",
-          href: "#",
+          href: "https://nexus-qgiv.vercel.app/",
           icon: <Icons.globe className="size-3" />,
         }
       ],

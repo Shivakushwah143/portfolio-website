@@ -1,4 +1,4 @@
-import { HackathonCard } from "@/components/hackathon-card";
+﻿import { HackathonCard } from "@/components/hackathon-card";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { ProjectCard } from "@/components/project-card";
@@ -72,31 +72,6 @@ export default function Page() {
           </Markdown>
         </BlurFade>
       </section>
-      <section id="work">
-        <div className="flex min-h-0 flex-col gap-y-3">
-          <BlurFade delay={BLUR_FADE_DELAY * 5}>
-            <h2 className="text-xl font-bold">Work Experience</h2>
-          </BlurFade>
-          {DATA.work.map((work, id) => (
-            <BlurFade
-              key={work.company}
-              delay={BLUR_FADE_DELAY * 6 + id * 0.05}
-            >
-              <ResumeCard
-                key={work.company}
-                logoUrl={work.logoUrl}
-                altText={work.company}
-                title={work.company}
-                subtitle={work.title}
-                href={work.href}
-                badges={work.badges}
-                period={`${work.start} - ${work.end ?? "Present"}`}
-                description={work.description}
-              />
-            </BlurFade>
-          ))}
-        </div>
-      </section>
       <section id="skills">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 9}>
@@ -114,9 +89,45 @@ export default function Page() {
       <section id="highlights">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 10.5}>
-            <h2 className="text-xl font-bold">Infrastructure Highlight</h2>
+            <h2 className="text-xl font-bold">Highlights</h2>
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 11}>
+            <details className="group rounded-lg border border-border bg-muted/30 p-4">
+              <summary className="cursor-pointer list-none font-semibold text-foreground focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
+                ✅ Production Engineering Highlights — Proof, Not Promises
+                <span className="ml-2 text-xs text-muted-foreground group-open:hidden">
+                  (click to expand)
+                </span>
+              </summary>
+              <div className="mt-3 space-y-3 text-sm text-muted-foreground">
+                <div className="font-semibold text-foreground">
+                  🔹 Proven Production Systems
+                </div>
+                <ul className="space-y-1 text-foreground/90">
+                  <li className="flex gap-2">
+                    <span className="text-emerald-400 font-extrabold">✔</span>
+                    Every technology listed here has shipped in real projects, with demos
+                  </li>
+                   <li className="flex gap-2">
+                    <span className="text-emerald-400 font-extrabold">✔</span>
+                    All GitHub README files are up to date
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-emerald-400 font-extrabold">✔</span>
+                    Claims are backed by live systems or public repo evidence
+                  </li>
+                 
+                  <li className="flex gap-2">
+                    <span className="text-emerald-400 font-extrabold">✔</span>
+                    Systems are production-grade: validation, security, and predictable
+                    error handling
+                  </li>
+                 
+                </ul>
+              </div>
+            </details>
+          </BlurFade>
+          <BlurFade delay={BLUR_FADE_DELAY * 11.5}>
             <details className="group rounded-lg border border-border bg-muted/30 p-4">
               <summary className="cursor-pointer list-none font-semibold text-foreground focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
                 🚀 Just Deployed a Production-Ready Backend with Full Infrastructure Setup
@@ -140,6 +151,90 @@ export default function Page() {
 
 API is now live over HTTPS behind Nginx, running on EC2 with proper environment isolation.`}
                 </Markdown>
+              </div>
+            </details>
+          </BlurFade>
+          <BlurFade delay={BLUR_FADE_DELAY * 12}>
+            <details className="group rounded-lg border border-border bg-muted/30 p-4">
+              <summary className="cursor-pointer list-none font-semibold text-foreground focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
+                ✅ Highlight: Production Engineering Stack
+                <span className="ml-2 text-xs text-muted-foreground group-open:hidden">
+                  (click to expand)
+                </span>
+              </summary>
+              <div className="mt-3 space-y-3 text-sm text-muted-foreground">
+                <div>
+                  <div className="font-semibold text-foreground">
+                    ✅ Core Architecture
+                  </div>
+                  <ul className="list-disc pl-5">
+                    <li>Full-Stack TypeScript (End-to-End TS + Zod Validation)</li>
+                    <li>Node.js + Express APIs</li>
+                    <li>SQL (PostgreSQL/Prisma) & NoSQL (MongoDB)</li>
+                    <li>Clean API Contracts & Structured Error Handling</li>
+                    <li>Production-Ready Frontend (Vite + Tailwind + Recoil)</li>
+                  </ul>
+                </div>
+                <div>
+                  <div className="font-semibold text-foreground">
+                    ✅ Authentication & Security
+                  </div>
+                  <ul className="list-disc pl-5">
+                    <li>JWT Authentication</li>
+                    <li>Google OAuth</li>
+                    <li>Secure Session Handling</li>
+                    <li>Rate Limiting & API Protection</li>
+                    <li>Input Validation (Zod)</li>
+                    <li>Environment Isolation</li>
+                  </ul>
+                </div>
+                <div>
+                  <div className="font-semibold text-foreground">
+                    ✅ Cloud & DevOps
+                  </div>
+                  <ul className="list-disc pl-5">
+                    <li>AWS EC2, S3, ECR, ECS</li>
+                    <li>Dockerized Services</li>
+                    <li>Nginx Reverse Proxy</li>
+                    <li>PM2 Process Management</li>
+                    <li>CI/CD via GitHub Actions</li>
+                    <li>Domain & DNS Mapping</li>
+                  </ul>
+                </div>
+                <div>
+                  <div className="font-semibold text-foreground">
+                    ✅ Scalability & Performance
+                  </div>
+                  <ul className="list-disc pl-5">
+                    <li>Redis Caching</li>
+                    <li>Event-Driven Architecture</li>
+                    <li>Kafka Messaging</li>
+                    <li>WebSockets (Real-Time Systems)</li>
+                    <li>Horizontal Scalability Design</li>
+                  </ul>
+                </div>
+                <div>
+                  <div className="font-semibold text-foreground">
+                    ✅ AI & Advanced Systems
+                  </div>
+                  <ul className="list-disc pl-5">
+                    <li>LangChain</li>
+                    <li>LangGraph</li>
+                    <li>Vector Databases (Qdrant)</li>
+                    <li>AI-Driven Workflows</li>
+                  </ul>
+                </div>
+                <div>
+                  <div className="font-semibold text-foreground">
+                    ✅ Integrations & Systems
+                  </div>
+                  <ul className="list-disc pl-5">
+                    <li>Email Services (SendGrid)</li>
+                    <li>Telegram Bot Integrations</li>
+                    <li>Registration & Auth Systems</li>
+                    <li>Background Job Processing</li>
+                  </ul>
+                </div>
               </div>
             </details>
           </BlurFade>
@@ -185,6 +280,20 @@ API is now live over HTTPS behind Nginx, running on EC2 with proper environment 
           </div>
         </div>
       </section>
+      <section id="resume">
+        <div className="flex min-h-0 flex-col items-center gap-y-3 py-6">
+          <BlurFade delay={BLUR_FADE_DELAY * 12.8}>
+            <Link
+              href="https://drive.google.com/file/d/107l8zxU_d8oc8D0XcIrvyOh3gae4oIwt/view?usp=drivesdk"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-lg bg-foreground px-5 py-2 text-sm font-semibold text-background hover:opacity-90 transition-opacity"
+            >
+              View Resume (PDF)
+            </Link>
+          </BlurFade>
+        </div>
+      </section>
       <section id="hackathons">
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 13}>
@@ -224,6 +333,31 @@ API is now live over HTTPS behind Nginx, running on EC2 with proper environment 
           </BlurFade>
         </div>
       </section>
+      <section id="work">
+        <div className="flex min-h-0 flex-col gap-y-3">
+          <BlurFade delay={BLUR_FADE_DELAY * 5}>
+            <h2 className="text-xl font-bold">Work Experience</h2>
+          </BlurFade>
+          {DATA.work.map((work, id) => (
+            <BlurFade
+              key={work.company}
+              delay={BLUR_FADE_DELAY * 6 + id * 0.05}
+            >
+              <ResumeCard
+                key={work.company}
+                logoUrl={work.logoUrl}
+                altText={work.company}
+                title={work.company}
+                subtitle={work.title}
+                href={work.href}
+                badges={work.badges}
+                period={`${work.start} - ${work.end ?? "Present"}`}
+                description={work.description}
+              />
+            </BlurFade>
+          ))}
+        </div>
+      </section>
       <section id="education">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 16}>
@@ -251,3 +385,6 @@ API is now live over HTTPS behind Nginx, running on EC2 with proper environment 
     </main>
   );
 }
+
+
+
