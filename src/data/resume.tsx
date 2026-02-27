@@ -128,8 +128,49 @@ export const DATA = {
           href: "#",
           icon: <Icons.globe className="size-3" />,
         },
+        {
+          type: "Demo",
+          href: "https://player.cloudinary.com/embed/?cloud_name=dvcbhvxd6&public_id=secondBrainAM_x0crbk",
+          icon: <Icons.youtube className="size-3" />,
+        },
       ],
-      image: "",
+      image: "/cravio-screenshot.png",
+      video: "",
+    },
+    {
+      title: "SoleScript — AI-Powered Full-Stack Content Generation Platform",
+      href: "#",
+      active: true,
+      description:
+        "A production-ready AI content platform that helps creators and businesses generate high-quality posts for LinkedIn, X, and Instagram in seconds. Built with secure authentication, credit-based subscriptions, Razorpay & UPI payments .",
+      technologies: [
+        "Next.js",
+        "Node.js",
+        "TypeScript",
+        "MongoDB",
+        "Clerk Authentication",
+        "Razorpay Integration",
+        "UPI Payments",
+        "AI Content Generation"
+      ],
+      links: [
+        {
+          type: "GitHub",
+          href: "#",
+          icon: <Icons.github className="size-3" />,
+        },
+        {
+          type: "Live",
+          href: "#",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Demo",
+          href: "https://player.cloudinary.com/embed/?cloud_name=dvcbhvxd6&public_id=secondBrainAM_x0crbk",
+          icon: <Icons.youtube className="size-3" />,
+        },
+      ],
+      image: "/soleScriptscreenshot-studio.png",
       video: "",
     },
     {
@@ -157,7 +198,37 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "",
+      image: "/secondBrain-screenshot-studio.png",
+      video: "",
+    },
+    {
+      title: "QuickWish Gifts — Full-Stack E-Commerce Gift Platform",
+      href: "https://github.com/Shivakushwah143/Quickwish-Gifts.git",
+      active: true,
+      description:
+        "A full-stack gift e-commerce platform designed for seamless product browsing, cart management, and secure checkout. Built with structured backend architecture, authentication, dynamic product handling, and responsive UI to deliver a smooth and scalable shopping experience.",
+      technologies: [
+        "Next.js",
+        "Node.js",
+        "TypeScript",
+        "MongoDB",
+        "Authentication",
+        "REST APIs",
+        "Responsive UI"
+      ],
+      links: [
+        {
+          type: "GitHub",
+          href: "https://github.com/Shivakushwah143/Quickwish-Gifts.git",
+          icon: <Icons.github className="size-3" />,
+        },
+        {
+          type: "Live",
+          href: "#",
+          icon: <Icons.globe className="size-3" />,
+        }
+      ],
+      image: "/quickwishscreenshot-studio.png",
       video: "",
     },
     {
@@ -185,9 +256,43 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "",
+      image: "/devForce-screensho.png",
       video: "",
     },
+    {
+      title: "Nexus— Production-Ready Full-Stack E-Commerce Platform",
+      href: "https://github.com/Shivakushwah143/NEXUS.git",
+      active: true,
+      description:
+        "A complete full-stack e-commerce platform built with modern web technologies. Includes secure JWT + OTP authentication, Stripe payment integration, real-time cart updates, admin dashboard, and full product & order lifecycle management.",
+      technologies: [
+        "React",
+        "TypeScript",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Mongoose",
+        "JWT Authentication",
+        "Stripe Payments",
+        "Tailwind CSS",
+        "Framer Motion"
+      ],
+      links: [
+        {
+          type: "GitHub",
+          href: "https://github.com/Shivakushwah143/NEXUS.git",
+          icon: <Icons.github className="size-3" />,
+        },
+        {
+          type: "Live",
+          href: "#",
+          icon: <Icons.globe className="size-3" />,
+        }
+      ],
+      image: "/nexus-screenshot-studio.png",
+      video: "",
+    },
+
     {
       title: "Vanish — Anonymous Real-Time Chat Application",
       href: "#",
@@ -212,7 +317,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "",
+      image: "/-vanish-screenshot-studio.png",
       video: "",
     },
   ],
