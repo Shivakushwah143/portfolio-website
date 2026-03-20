@@ -15,8 +15,10 @@ export const DATA = {
   skills: [
     "TypeScript",
     "JavaScript",
+    "Python",
     "Node.js",
     "Express.js",
+    "FastAPI",
     "PostgreSQL",
     "MongoDB",
     "Prisma",
@@ -31,6 +33,7 @@ export const DATA = {
     "AWS",
     "LangChain",
     "LangGraph",
+    "Generative AI",
     "Vector Databases",
   ],
   navbar: [{ href: "/", icon: HomeIcon, label: "Home" }],
@@ -135,7 +138,7 @@ export const DATA = {
         },
       ],
       image: "/cravio-screenshot.png",
-      video: "",
+      video: "https://res.cloudinary.com/dvcbhvxd6/video/upload/v1773992940/6190423079114513480_myabgv.mp4",
     },
     {
       title: "SoleScript — AI-Powered Full-Stack Content Generation Platform",
@@ -171,7 +174,7 @@ export const DATA = {
         },
       ],
       image: "/soleScriptscreenshot-studio.png",
-      video: "",
+      video: "https://res.cloudinary.com/dvcbhvxd6/video/upload/v1773993127/6190423079114513479_qg4g7f.mp4",
     },
     {
       title: "SecondBrain — AI Knowledge Management System",
@@ -199,7 +202,7 @@ export const DATA = {
         },
       ],
       image: "/secondBrain-screenshot-studio.png",
-      video: "",
+      video: "https://res.cloudinary.com/dvcbhvxd6/video/upload/v1770441075/secondBrainAM_x0crbk.mp4",
     },
     {
       title: "QuickWish Gifts — Full-Stack E-Commerce Gift Platform",
@@ -229,7 +232,7 @@ export const DATA = {
         }
       ],
       image: "/quickwishscreenshot-studio.png",
-      video: "",
+      video: "https://res.cloudinary.com/dvcbhvxd6/video/upload/v1773993165/6190423079114513470_gmpe88.mp4",
     },
     {
       title: "DevForces — Competitive Programming Platform",
@@ -257,7 +260,7 @@ export const DATA = {
         },
       ],
       image: "/devForce-screensho.png",
-      video: "",
+      video: "https://res.cloudinary.com/dvcbhvxd6/video/upload/v1774010556/6190423079114513849_r1hplq.mp4",
     },
     {
       title: "Nexus— Production-Ready Full-Stack E-Commerce Platform",
@@ -290,7 +293,7 @@ export const DATA = {
         }
       ],
       image: "/nexus-screenshot-studio.png",
-      video: "",
+      video: "https://res.cloudinary.com/dvcbhvxd6/video/upload/v1773993084/6190423079114513472_py7cti.mp4",
     },
 
     {
@@ -318,7 +321,7 @@ export const DATA = {
         },
       ],
       image: "/-vanish-screenshot-studio.png",
-      video: "",
+      video: "https://res.cloudinary.com/dvcbhvxd6/video/upload/v1770441192/vanish_AM_pobtwv.mp4",
     },
   ],
   hackathons: [
@@ -328,6 +331,15 @@ export const DATA = {
       location: "Sri Aurobindo Institute of Technology, Indore",
       description:
         "24-hour hackathon with a 5-member team. Built a Lost & Found web app using the MERN stack.",
+      image: "",
+      links: [],
+    },
+    {
+      title: "AI Recommendation System | Hackathon Project",
+      dates: "City Level Hackathon",
+      location: "SCSIT, DAVV Indore",
+      description:
+        "Built an AI-powered recommendation engine for local businesses that personalizes products based on user behavior (click, cart, purchase, reviews). Implemented event tracking, user interest profiling, and vector-based recommendations using Qdrant. Focused on system design, real-time learning, and personalized user experience.",
       image: "",
       links: [],
     },
