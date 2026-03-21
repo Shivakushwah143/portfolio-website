@@ -336,7 +336,7 @@ export const DATA = {
     },
     {
       title: "AI Recommendation System | Hackathon Project",
-      dates: "City Level Hackathon",
+      dates: "March 17, 2026 City Level Hackathon",
       location: "SCSIT, DAVV Indore",
       description:
         "Built an AI-powered recommendation engine for local businesses that personalizes products based on user behavior (click, cart, purchase, reviews). Implemented event tracking, user interest profiling, and vector-based recommendations using Qdrant. Focused on system design, real-time learning, and personalized user experience.",
