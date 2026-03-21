@@ -197,7 +197,7 @@ export const DATA = {
         },
         {
           type: "Live",
-          href: "#",
+          href: "https://second-brain-qkz50a5v2-shivakushwah143s-projects.vercel.app/",
           icon: <Icons.globe className="size-3" />,
         },
       ],
@@ -316,7 +316,7 @@ export const DATA = {
         },
         {
           type: "Live",
-          href: "#",
+          href: "https://vanisha-sigma.vercel.app/",
           icon: <Icons.globe className="size-3" />,
         },
       ],

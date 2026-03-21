@@ -92,11 +92,11 @@ export default function Page() {
             <h2 className="text-xl font-bold">Highlights</h2>
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 11}>
-            <details className="group rounded-lg border border-border bg-muted/30 p-4">
-              <summary className="cursor-pointer list-none font-semibold text-foreground focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
-                ✅ Production Engineering Highlights — Proof, Not Promises
-                <span className="ml-2 text-xs text-muted-foreground group-open:hidden">
-                  (click to expand)
+            <details className="group rounded-xl border border-border/70 bg-[#f7f9fc] dark:bg-emerald-950/30 p-2 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md">
+              <summary className="flex flex-wrap items-center gap-2 cursor-pointer list-none rounded-lg border border-border/60 bg-white/90 dark:bg-emerald-950/60 px-4 py-3 font-semibold text-foreground shadow-sm transition-all duration-300 hover:shadow-md focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300 focus-visible:ring-offset-2">
+                <span>✅ Production Engineering Highlights — Proof, Not Promises</span>
+                <span className="ml-auto inline-flex items-center rounded-full bg-emerald-600 dark:bg-emerald-500 px-3 py-1 text-[11px] font-semibold text-white shadow-sm transition-all duration-300 group-hover:translate-x-0.5">
+                  View details
                 </span>
               </summary>
               <div className="mt-3 space-y-3 text-sm text-muted-foreground">
@@ -128,11 +128,11 @@ export default function Page() {
             </details>
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 11.5}>
-            <details className="group rounded-lg border border-border bg-muted/30 p-4">
-              <summary className="cursor-pointer list-none font-semibold text-foreground focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
-                🚀 Just Deployed a Production-Ready Backend with Full Infrastructure Setup
-                <span className="ml-2 text-xs text-muted-foreground group-open:hidden">
-                  (click to expand)
+            <details className="group rounded-xl border border-border/70 bg-[#fff8f0] dark:bg-amber-950/30 p-2 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md">
+              <summary className="flex flex-wrap items-center gap-2 cursor-pointer list-none rounded-lg border border-border/60 bg-white/90 dark:bg-amber-950/60 px-4 py-3 font-semibold text-foreground shadow-sm transition-all duration-300 hover:shadow-md focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-300 focus-visible:ring-offset-2">
+                <span>🚀 Just Deployed a Production-Ready Backend with Full Infrastructure Setup</span>
+                <span className="ml-auto inline-flex items-center rounded-full bg-amber-600 dark:bg-amber-500 px-3 py-1 text-[11px] font-semibold text-white shadow-sm transition-all duration-300 group-hover:translate-x-0.5">
+                  View details
                 </span>
               </summary>
               <div className="mt-3">
@@ -155,11 +155,11 @@ API is now live over HTTPS behind Nginx, running on EC2 with proper environment 
             </details>
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 12}>
-            <details className="group rounded-lg border border-border bg-muted/30 p-4">
-              <summary className="cursor-pointer list-none font-semibold text-foreground focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
-                ✅ Highlight: Production Engineering Stack
-                <span className="ml-2 text-xs text-muted-foreground group-open:hidden">
-                  (click to expand)
+            <details className="group rounded-xl border border-border/70 bg-[#f3f8ff] dark:bg-sky-950/30 p-2 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md">
+              <summary className="flex flex-wrap items-center gap-2 cursor-pointer list-none rounded-lg border border-border/60 bg-white/90 dark:bg-sky-950/60 px-4 py-3 font-semibold text-foreground shadow-sm transition-all duration-300 hover:shadow-md focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-300 focus-visible:ring-offset-2">
+                <span>✅ Highlight: Production Engineering Stack</span>
+                <span className="ml-auto inline-flex items-center rounded-full bg-sky-600 dark:bg-sky-500 px-3 py-1 text-[11px] font-semibold text-white shadow-sm transition-all duration-300 group-hover:translate-x-0.5">
+                  View details
                 </span>
               </summary>
               <div className="mt-3 space-y-3 text-sm text-muted-foreground">
@@ -363,6 +363,12 @@ API is now live over HTTPS behind Nginx, running on EC2 with proper environment 
           <BlurFade delay={BLUR_FADE_DELAY * 16}>
             <h2 className="text-xl font-bold">Education</h2>
           </BlurFade>
+          <BlurFade delay={BLUR_FADE_DELAY * 16.3}>
+            <p className="text-sm text-muted-foreground">
+              I’m currently pursuing MCA with flexible schedule, so I’m fully
+              available for full-time roles.
+            </p>
+          </BlurFade>
           {DATA.education.map((education, id) => (
             <BlurFade
               key={education.school}
@@ -385,6 +391,3 @@ API is now live over HTTPS behind Nginx, running on EC2 with proper environment 
     </main>
   );
 }
-
-
-
